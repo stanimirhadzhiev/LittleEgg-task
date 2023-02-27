@@ -1,0 +1,177 @@
+.header{
+    width: 100%;
+    height: 1050px;
+    background-image: url("../../assets/images/david-gavi-Ijx8OxvKrgM-unsplash.png");
+    background-size: cover;
+    overflow-y: hidden;
+    color: white;
+    z-index: 10;
+}
+.dots{
+    width: 100%;
+    height: 80px;
+    background-image: url("../../assets/images/dotss.png");
+    opacity: 0.5;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    width: 170px;
+    height: 150px;
+    float: left;
+}
+.navigation-wrapper{
+    width: 840px;
+    height: 63px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation-wrapper nav{
+    width: 100%;
+}
+.topnav{
+    width: 100%;
+    height: 64px;
+    padding-left: 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.topnav a{
+    color: white;
+}
+
+.topnav li:not(:nth-child(5n) ){
+    height: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.topnav a:hover{
+    color: chocolate;
+}
+
+.phone-button{
+    width: 240px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #131d3a;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+.phone-button:hover{
+    background-color: white;
+    color: #131d3a;
+}
+.language{
+    width: 58px;
+    height: 21px;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.language:hover{
+    color: chocolate;
+}
+
+.hamburger{
+    display: none;
+    float: right;
+    padding: 14px 16px;
+    background-color: inherit;
+    border: none;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger:hover{
+    background-color: #f2f2f2;
+    color: #212529;
+}
+
+.expanded{
+    width: 100%;
+    height: 330px;
+    position: absolute;
+    right: 0px;
+    margin-top: 60px;
+    padding: 0;
+    background-color: #131d3a;
+    z-index: 100;
+}
+
+.more-btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.title-wrapper{
+    max-width: 950px;
+    margin: 10%;
+    text-align: left;
+}
+
+.title-wrapper h1{
+    margin-top: 30px;
+    font-size: 70px;
+}
+.title-wrapper h4{
+    font-family: 'Gilroy', 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 992px) {
+    .hamburger{
+        display: block; 
+    }
+
+    .topnav{
+        display: none;
+    }
+
+    .topnav.expanded{
+        display: block;
+    }
+
+    .title-wrapper{
+        text-align: center;
+    }
+    .phone-button{
+        width: 100%;
+        border-radius: 0px;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .logo{
+        width: 100px;
+        height: 80px;
+    }
+    
+    .title-wrapper h1{
+        font-size: 50px;
+    }
+    .title-wrapper h4{
+        font-size: 14px;
+    }
+}

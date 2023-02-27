@@ -1,0 +1,153 @@
+.footer{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: #1a274c;
+    color: white;
+}
+
+.wrapper{
+    width: 90%;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.logo{
+    width: 106px;
+    height: 51px;
+    background-image: url("../../assets/images/logo-footer.png");
+    cursor: pointer;
+}
+.contacts{
+    width: 521px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.contact-type{
+    font-family: 'Gilroy', 'Times New Roman', Times, serif;
+}
+
+.navigation{
+    width: 111px;
+    font-size: 32px;
+    line-height: 60px;
+    
+}
+.navigation ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.wrapper a,
+.wrapper p{
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+}
+.navigation a:hover,
+.contacts a:hover{
+    padding: 5px;
+    background-color: #fcf2df;
+    color:#1a274c;
+}
+
+.bottom{
+    width: 90%;
+    height: 100px;
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 40px;
+    left: 5%;
+    border-top: 2px solid #fcf2df;
+    z-index: 100;
+}
+
+.text{
+    width: 213px;
+    font-size: 32px;
+}
+
+.tac{
+    width: 450px;
+    font-size: 14px;
+    font-family: 'Gilroy', 'Times New Roman', Times, serif;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tac a{
+    color: white;
+}
+.created{
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.created img{
+    position: absolute;
+    margin-left: 10px;
+}
+
+.triangle{
+    width: 309px;
+    height: 309px;
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("../../assets/images/triangle.png");
+    z-index: 50;
+}
+
+@media screen and (max-width: 992px){
+    .wrapper a,
+    .wrapper p {
+        margin: 0;
+        color: white;
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .footer{
+        height: 1100px;
+    }
+    .wrapper{
+        text-align: center;
+        width: 90%;
+        height: 800px;
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    .logo{
+        margin: 20px auto;
+    }
+    .contacts{
+        width: 100%;
+        text-align: center;
+    }
+    .navigation{
+        margin: auto;
+    }
+    .text{
+        font-size: 25px;
+    }
+}
