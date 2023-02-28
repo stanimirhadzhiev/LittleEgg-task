@@ -11,6 +11,8 @@ const textArray = [
 export const Slider = () =>{
     const [text, setText] = useState(textArray[0]);
 
+
+
     return(
         <div className={style["slider"]}>
             <ul className={style["navigation"]}>
@@ -20,9 +22,8 @@ export const Slider = () =>{
                 <li onClick={()=>setText(textArray[3])}>Нашите партньори</li>
             </ul>
             <div className={style["content"]}>
-                <p> 
-                    {text}
-                </p>
+                <p key={text}>{text}</p>
+                {/* <SliderText key={text} text={text}/> */}
             </div>
         </div>
     );

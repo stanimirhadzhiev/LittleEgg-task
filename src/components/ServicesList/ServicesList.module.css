@@ -116,8 +116,18 @@
     line-height: 17px;
     font-weight: bold;
     font-family: 'Gilroy', 'Times New Roman', Times, serif;
+    
     cursor: pointer;
 }
+
+.service-details-btn a{
+    color: white;
+}
+
+.service-details-btn a:hover{
+    color: chocolate;
+}
+
 .navigation{
     position: absolute;
     bottom: -37px;

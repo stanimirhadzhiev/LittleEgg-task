@@ -16,7 +16,7 @@ export const Header = () =>{
                  
                 <div className={style["navigation-wrapper"]}>
                     <nav>
-                        <ul className={isNavExpanded ? `${style.topnav} ${style.expanded}` : `${style.topnav}`}>
+                        <ul className={isNavExpanded ? `${style.topnav} ${style.expanded}` : `${style.topnav}`} key={isNavExpanded}>
                             <li><a href="#" onClick={handleToggle}>НАЧАЛО</a></li>
                             <li><a href="#" onClick={handleToggle}>ЗА НАС</a></li>
                             <li><a href="#" onClick={handleToggle}>УСЛУГИ</a></li>

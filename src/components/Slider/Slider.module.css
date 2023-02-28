@@ -41,6 +41,31 @@
     line-height: 45px;
 }
 
+.content p{
+    animation: 2s anim-lineDown ease-in-out 1;
+}
+
+@keyframes anim-lineDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 @media screen and (max-width: 992px) {
     .navigation li{
         padding-left: 0px;
