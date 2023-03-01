@@ -18,7 +18,29 @@
 }
 .text{
     font-size: 50px;
+    animation: 2s anim-lineLeft ease-in-out 1;
 }
+@keyframes anim-lineLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
 
 .arrow-btn{
     width: 26px;
@@ -33,6 +55,7 @@
     float: right;
     bottom: 0px;
     right: 0px;
+    animation: 2s anim-lineLeft ease-in-out 1;
 }
 
 @media screen and (max-width: 992px){

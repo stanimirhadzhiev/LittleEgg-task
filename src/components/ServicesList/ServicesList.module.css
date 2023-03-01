@@ -102,12 +102,14 @@
     margin-top: 15%;
     font-family: 'Gilroy', 'Times New Roman', Times, serif;
     font-size: 18px;
+    animation: 2s anim-lineLeft ease-in-out 1;
 }
 
 .service-information{
     margin: 10%;
     font-size: 26px;
     line-height: 35px;
+    animation: 2s anim-lineLeft ease-in-out 1;
 }
 
 .service-details-btn{
@@ -217,5 +219,26 @@
         width: 90%;
         margin: auto;
         margin-bottom: 20px;
+    }
+}
+
+@keyframes anim-lineLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
     }
 }

@@ -38,6 +38,7 @@
     background-image: url("../../assets/images/Layer-33.png");
     background-size: contain;
     background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cta-right{
@@ -52,6 +53,9 @@
     color:white;
 }
 
+.cta-right:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .cta-header{
     width: 80%;
     display: flex;
@@ -70,7 +74,7 @@
 }
 
 .cta-content{
-    margin: 10%;
+    margin: 10% 10% 5% 10%;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -81,6 +85,7 @@
     width: 80%;
     font-size: 50px;
     text-align: left;
+    margin-bottom: 0px;
 }
 .nav-btn{
     width: 64px;

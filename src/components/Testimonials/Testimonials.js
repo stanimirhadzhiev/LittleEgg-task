@@ -36,7 +36,7 @@ export const Testimonials = () =>{
     return(
         <div className={style["container"]}>
             <p className={style["title-testimonial"]}>КЛИЕНТИТЕ ЗА НАС</p>
-            <p className={style["text"]}>“{testimonial.message}”</p>
+            <p className={style["text"]} key={testimonial.message}>“{testimonial.message}”</p>
             <div className={style["navigation"]}>
                 {index 
                     ? <BsArrowLeft className={style["arrow-btn"]} onClick={() => setIndex(index - 1)}/> 
@@ -46,7 +46,7 @@ export const Testimonials = () =>{
                     ? <></> 
                     : <BsArrowRight className={style["arrow-btn"]} onClick={() => setIndex(index + 1)}/>
                 }
-                <span className={style["name"]}>{testimonial.name}, {testimonial.company}</span>
+                <span className={style["name"]} key={testimonial.name}>{testimonial.name}, {testimonial.company}</span>
             </div>
         </div>
     );

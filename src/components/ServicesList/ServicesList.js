@@ -9,7 +9,7 @@ const servicesArray = [
     },
     {
         title: "Специализирани услуги",
-        service: "Предлагаме на нашите клиенти пълно текущо управление на тяхната финансово-счетоводна отчетност и изготвяне на необходимите финансови отчети. Осъществяваме комуникацията и представителството пред данъчната администрация.",
+        service: "АВА Партньори предлага изготвяне на месечни справки-декларации по ЗДДС, както на юридически лица от ЕС, така и на юридически лица извън ЕС, чрез акредитирано представителство; възстановяване на данък добавена стойност и данъчна защита в хода на тази процедура.",
     },
     {
         title: "Финансово-счетоводен контрол",
@@ -17,11 +17,11 @@ const servicesArray = [
     },
     {
         title: "Данъчни консултации",
-        service: "Предлагаме на нашите клиенти пълно текущо управление на тяхната финансово-счетоводна отчетност и изготвяне на необходимите финансови отчети. Осъществяваме комуникацията и представителството пред данъчната администрация.",
+        service: "Предлагаме на нашите клиенти данъчно консултиране. Осъществяваме комуникацията и представителството пред данъчната администрация.",
     },
     {
         title: "Обработка на трудовите възнаграждения",
-        service: "Предлагаме на нашите клиенти пълно текущо управление на тяхната финансово-счетоводна отчетност и изготвяне на необходимите финансови отчети. Осъществяваме комуникацията и представителството пред данъчната администрация.",
+        service: "Администрирането на работните заплати често е деликатен и конфиденциален въпрос, който изисква пълно съответствие с динамичните промени в нормативните разпоредби, регламентиращи тази материя.",
     },
 ];
 
@@ -50,8 +50,8 @@ export const ServicesList = () =>{
                 </div>
                 <div className={style["services-list"]}>
                     <div className={style["column"]}>
-                        <p className={style["service-title"]}>{service.title}</p>
-                        <p className={style["service-information"]}>
+                        <p className={style["service-title"]} key={service.title}>{service.title}</p>
+                        <p className={style["service-information"]} key={service.service}>
                             {service.service}
                         </p>
                         <div className={style["service-details-btn"]}>
@@ -61,8 +61,8 @@ export const ServicesList = () =>{
                     {nextService == undefined
                         ? <></>
                         : <div className={style["next-column"]}>
-                            <p className={style["service-title"]}>{nextService.title}</p>
-                            <p className={style["service-information"]}>
+                            <p className={style["service-title"]} key={service.title}>{nextService.title}</p>
+                            <p className={style["service-information"]} key={nextService.service}>
                                 {nextService.service}
                             </p>
                         </div>
